@@ -1,0 +1,218 @@
+$orange:#ffa200;
+$green:#6eda78 ;
+$white:#fff;
+$gray:#555;
+$width:0;
+$height:0;
+
+
+h1{
+    position: absolute;
+    top: 70px;
+    left:20px;
+    font-size: 2.0em;
+}
+
+    .shape{
+        align-items: center;
+        margin-bottom: 100px;
+        justify-content: center;
+        
+        .shape-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+                #btn-shape{
+                    transform: translate(90px);
+                    right: 75px;
+                    width: 500px;
+                    margin-bottom: 50px;
+                    .triangle-up{
+                        width: $width;
+                        height: $height;
+                        border-left: 40px solid transparent;
+                        border-right: 40px solid transparent;
+                        border-bottom: 75px solid $gray;
+                        margin-right: 170px;
+                    }
+                        
+                    .triangle-down{
+                        width: $width;
+                        height: $height;
+                        border-left: 40px solid transparent;
+                        border-right: 40px solid transparent;
+                        border-top: 75px solid $gray;
+                    }
+                    span{
+                        p{
+                            font-size:0.7rem;
+                            position: absolute;
+                            bottom:-10px;
+                            left: 200px;
+                            width: 90px;
+                            border: px solid $green;
+                            border-radius: 20px;
+                            color:$white;
+                            background-color: $green;      
+                        }
+                    }
+                }
+        
+                .triangle-left{
+                    width: $width;
+                    height: $height;
+                    border-top: 40px solid transparent;
+                    border-right: 75px solid $gray;
+                    border-bottom: 40px solid transparent;
+                    
+                    span{
+                        p{
+                            font-size:0.7rem;
+                            position: absolute;
+                            bottom:-10px;
+                            width: 90px;
+                            border: px solid $green;
+                            border-radius: 20px;
+                            color:$white;
+                            background-color: $green;      
+                        }
+                    }
+                }
+                #btn-shape1{
+                    transform: translate(30px);
+                    .triangle-right{
+                        width: $width;
+                        height: $height;
+                        border-top: 40px solid transparent;
+                        border-left: 75px solid #555;
+                        border-bottom: 40px solid transparent;
+                    }
+                    span{
+                        p{
+                            font-size:0.7rem;
+                            position: absolute;
+                            bottom:-10px;
+                            width: 90px;
+                            left: 80px;
+                            border: px solid $green;
+                            border-radius: 20px;
+                            color:$white;
+                            background-color: $green;      
+                        }
+                    }
+                }
+            }
+        
+        Button{
+            width: 250px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center ;
+            &:hover {
+                background-color:$orange;
+                cursor: pointer;
+            }
+                        
+            &:active {
+                background-color: $green;
+            }
+        }
+        .shape-rd{
+            align-items: center;
+            justify-content: center;
+            #row{
+                width: 70%;
+                transform: translate(25%, 0);
+                display: flex;
+                justify-content: center;
+                
+                #col1{
+                    margin: 5px;
+                    transform: translate(200px);
+                }
+
+                #col2{
+                    margin: 5px;
+                }
+            }
+            #row{
+                flex: 1 1 100px;
+            }
+            .Button1 {
+                transform: translate(-50%, -50%);
+            }
+            .square {
+                height: 90px;
+                width: 90px;
+                border-radius: 0;
+                background-color: $gray;
+
+                &:hover {
+                    background-color:$white;
+                    cursor: pointer;
+                }
+            }
+                
+            .circle {
+                height: 95px;
+                width: 95px;
+                background-color: $gray;
+                border-radius: 50%;
+                &:hover {
+                    background-color:$white;
+                    cursor: pointer;
+                }
+            }
+            .oval {
+                height: 90px;
+                width: 220px;
+                background-color: $gray;
+                border-radius: 50%;
+
+                &:hover {
+                    background-color:$white;
+                    cursor: pointer;
+                }
+            }
+            .trapezoid {
+                border-bottom: 85px solid $gray;
+                border-left: 40px solid transparent;
+                border-right: 40px solid transparent;
+                height: $height;
+                width: 220px;
+                
+                &:hover {
+                    border-bottom:85px solid $white;
+                    cursor: pointer;
+                }
+            }
+            .rectangle {
+                height: 100px;
+                width: 230px;
+                background-color: $gray;
+
+                &:hover {
+                    background-color:$white;
+                    cursor: pointer;
+                }
+            }
+            .parallelogram {
+                width: 190px;
+                height: 85px;
+                transform: skew(20deg);
+                background: $gray;
+
+                &:hover {
+                    background-color:$white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+@media (min-width: 1285px) {
+    .shape-rd{
+        width: 1200px;
+    }
+}
