@@ -28,6 +28,8 @@ i18next.use(initReactI18next).init({
     resources: {
       en: {
         translation: {
+          "shape":"Move Shape",
+          "position":"Move Position",
           "test1-lang":"Layout & Style",
           "lang-en":"EN",
           "lang-th":"TH",
@@ -41,6 +43,8 @@ i18next.use(initReactI18next).init({
       },
       th: {
         translation: {
+          "shape":"เลือกรูปแบบ",
+          "position":"เปลี่ยนตำแหน่ง",
           "test1-lang":"การจัดการหน้าเว็ป",
           "lang-en":"อังกฤษ",
           "lang-th":"ไทย",
