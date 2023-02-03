@@ -47,19 +47,19 @@ const App: React.FC = () => {
           <Row>
             <Col>
               <Button onClick={handleNextClick}>
-                <div className="triangle-left" ><span><p>Move shape</p></span></div>
+                <div className="triangle-left" ><span><p>{t('shape')}</p></span></div>
               </Button>
             </Col>
             <Col>
               <Button onClick={handleClick} id='btn-shape'>
                 <div className="triangle-up" />
                 <div className="triangle-down" />
-                <span><p>Move Position</p></span>
+                <span><p>{t('position')}</p></span>
               </Button>
             </Col>
             <Col>
               <Button onClick={handlePrevClick} id='btn-shape1'>
-                <div className="triangle-right" ><span><p>Move shape</p></span></div>
+                <div className="triangle-right" ><span><p>{t('shape')}</p></span></div>
               </Button>
             </Col>
           </Row>
